@@ -14,6 +14,14 @@
 		F61A76671E200CEE006A82D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61A76651E200CEE006A82D0 /* LaunchScreen.storyboard */; };
 		F61A76721E200CEE006A82D0 /* TrashWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A76711E200CEE006A82D0 /* TrashWidgetTests.swift */; };
 		F61A767D1E200CEE006A82D0 /* TrashWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A767C1E200CEE006A82D0 /* TrashWidgetUITests.swift */; };
+		F61A76911E201021006A82D0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A76901E201021006A82D0 /* NotificationCenter.framework */; };
+		F61A76941E201021006A82D0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A76931E201021006A82D0 /* TodayViewController.swift */; };
+		F61A76971E201021006A82D0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61A76951E201021006A82D0 /* MainInterface.storyboard */; };
+		F61A769B1E201021006A82D0 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F61A768E1E201021006A82D0 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F61A76A21E20149F006A82D0 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A76A11E20149F006A82D0 /* DateUtils.swift */; };
+		F61A76A31E201692006A82D0 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A76A11E20149F006A82D0 /* DateUtils.swift */; };
+		F61A76A61E20174E006A82D0 /* TrashDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A76A51E20174E006A82D0 /* TrashDefinition.swift */; };
+		F61A76A71E20174E006A82D0 /* TrashDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A76A51E20174E006A82D0 /* TrashDefinition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,28 @@
 			remoteGlobalIDString = F61A76581E200CEE006A82D0;
 			remoteInfo = TrashWidget;
 		};
+		F61A76991E201021006A82D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F61A76511E200CEE006A82D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F61A768D1E201021006A82D0;
+			remoteInfo = Widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F61A769F1E201021006A82D0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F61A769B1E201021006A82D0 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F61A76591E200CEE006A82D0 /* TrashWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +76,13 @@
 		F61A76781E200CEE006A82D0 /* TrashWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A767C1E200CEE006A82D0 /* TrashWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashWidgetUITests.swift; sourceTree = "<group>"; };
 		F61A767E1E200CEE006A82D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61A768E1E201021006A82D0 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61A76901E201021006A82D0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F61A76931E201021006A82D0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F61A76961E201021006A82D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F61A76981E201021006A82D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61A76A11E20149F006A82D0 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = TrashWidget/DateUtils.swift; sourceTree = "<group>"; };
+		F61A76A51E20174E006A82D0 /* TrashDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrashDefinition.swift; path = TrashWidget/TrashDefinition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +107,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F61A768B1E201021006A82D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61A76911E201021006A82D0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F61A76501E200CEE006A82D0 = {
 			isa = PBXGroup;
 			children = (
+				F61A76A41E20172F006A82D0 /* Common */,
+				F61A76A01E201453006A82D0 /* Utils */,
 				F61A765B1E200CEE006A82D0 /* TrashWidget */,
 				F61A76701E200CEE006A82D0 /* TrashWidgetTests */,
 				F61A767B1E200CEE006A82D0 /* TrashWidgetUITests */,
+				F61A76921E201021006A82D0 /* Widget */,
+				F61A768F1E201021006A82D0 /* Frameworks */,
 				F61A765A1E200CEE006A82D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +138,7 @@
 				F61A76591E200CEE006A82D0 /* TrashWidget.app */,
 				F61A766D1E200CEE006A82D0 /* TrashWidgetTests.xctest */,
 				F61A76781E200CEE006A82D0 /* TrashWidgetUITests.xctest */,
+				F61A768E1E201021006A82D0 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +174,40 @@
 			path = TrashWidgetUITests;
 			sourceTree = "<group>";
 		};
+		F61A768F1E201021006A82D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F61A76901E201021006A82D0 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F61A76921E201021006A82D0 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				F61A76931E201021006A82D0 /* TodayViewController.swift */,
+				F61A76951E201021006A82D0 /* MainInterface.storyboard */,
+				F61A76981E201021006A82D0 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		F61A76A01E201453006A82D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F61A76A11E20149F006A82D0 /* DateUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F61A76A41E20172F006A82D0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F61A76A51E20174E006A82D0 /* TrashDefinition.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +218,12 @@
 				F61A76551E200CEE006A82D0 /* Sources */,
 				F61A76561E200CEE006A82D0 /* Frameworks */,
 				F61A76571E200CEE006A82D0 /* Resources */,
+				F61A769F1E201021006A82D0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F61A769A1E201021006A82D0 /* PBXTargetDependency */,
 			);
 			name = TrashWidget;
 			productName = TrashWidget;
@@ -181,6 +266,23 @@
 			productReference = F61A76781E200CEE006A82D0 /* TrashWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F61A768D1E201021006A82D0 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61A769C1E201021006A82D0 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				F61A768A1E201021006A82D0 /* Sources */,
+				F61A768B1E201021006A82D0 /* Frameworks */,
+				F61A768C1E201021006A82D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = F61A768E1E201021006A82D0 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +310,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = F61A76581E200CEE006A82D0;
 					};
+					F61A768D1E201021006A82D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MTCCJ9QPF6;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = F61A76541E200CEE006A82D0 /* Build configuration list for PBXProject "TrashWidget" */;
@@ -226,6 +333,7 @@
 				F61A76581E200CEE006A82D0 /* TrashWidget */,
 				F61A766C1E200CEE006A82D0 /* TrashWidgetTests */,
 				F61A76771E200CEE006A82D0 /* TrashWidgetUITests */,
+				F61A768D1E201021006A82D0 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F61A768C1E201021006A82D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61A76971E201021006A82D0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,7 +379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61A765F1E200CEE006A82D0 /* ViewController.swift in Sources */,
+				F61A76A21E20149F006A82D0 /* DateUtils.swift in Sources */,
 				F61A765D1E200CEE006A82D0 /* AppDelegate.swift in Sources */,
+				F61A76A61E20174E006A82D0 /* TrashDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +401,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F61A768A1E201021006A82D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61A76941E201021006A82D0 /* TodayViewController.swift in Sources */,
+				F61A76A31E201692006A82D0 /* DateUtils.swift in Sources */,
+				F61A76A71E20174E006A82D0 /* TrashDefinition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = F61A76581E200CEE006A82D0 /* TrashWidget */;
 			targetProxy = F61A76791E200CEE006A82D0 /* PBXContainerItemProxy */;
+		};
+		F61A769A1E201021006A82D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F61A768D1E201021006A82D0 /* Widget */;
+			targetProxy = F61A76991E201021006A82D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +446,14 @@
 				F61A76661E200CEE006A82D0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F61A76951E201021006A82D0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61A76961E201021006A82D0 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +553,7 @@
 		F61A76821E200CEE006A82D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MTCCJ9QPF6;
 				INFOPLIST_FILE = TrashWidget/Info.plist;
@@ -425,6 +567,7 @@
 		F61A76831E200CEE006A82D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MTCCJ9QPF6;
 				INFOPLIST_FILE = TrashWidget/Info.plist;
@@ -493,6 +636,32 @@
 			};
 			name = Release;
 		};
+		F61A769D1E201021006A82D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MTCCJ9QPF6;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kento.maruta.TrashWidget.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F61A769E1E201021006A82D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MTCCJ9QPF6;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kento.maruta.TrashWidget.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +695,14 @@
 			buildConfigurations = (
 				F61A76881E200CEE006A82D0 /* Debug */,
 				F61A76891E200CEE006A82D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F61A769C1E201021006A82D0 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61A769D1E201021006A82D0 /* Debug */,
+				F61A769E1E201021006A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
