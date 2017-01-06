@@ -1,1 +1,1 @@
-# TrastWidget
+# TrashWidget
