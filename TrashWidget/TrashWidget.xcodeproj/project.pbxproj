@@ -83,6 +83,8 @@
 		F61A76981E201021006A82D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A76A11E20149F006A82D0 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = TrashWidget/DateUtils.swift; sourceTree = "<group>"; };
 		F61A76A51E20174E006A82D0 /* TrashDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrashDefinition.swift; path = TrashWidget/TrashDefinition.swift; sourceTree = "<group>"; };
+		F6AA8B121E99593E007E5CE4 /* TrashWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrashWidget.entitlements; sourceTree = "<group>"; };
+		F6AA8B141E9967C3007E5CE4 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		F61A765B1E200CEE006A82D0 /* TrashWidget */ = {
 			isa = PBXGroup;
 			children = (
+				F6AA8B121E99593E007E5CE4 /* TrashWidget.entitlements */,
 				F61A765C1E200CEE006A82D0 /* AppDelegate.swift */,
 				F61A765E1E200CEE006A82D0 /* ViewController.swift */,
 				F61A76601E200CEE006A82D0 /* Main.storyboard */,
@@ -185,6 +188,7 @@
 		F61A76921E201021006A82D0 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				F6AA8B141E9967C3007E5CE4 /* Widget.entitlements */,
 				F61A76931E201021006A82D0 /* TodayViewController.swift */,
 				F61A76951E201021006A82D0 /* MainInterface.storyboard */,
 				F61A76981E201021006A82D0 /* Info.plist */,
@@ -297,6 +301,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = MTCCJ9QPF6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F61A766C1E200CEE006A82D0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -314,6 +323,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = MTCCJ9QPF6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -555,6 +569,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TrashWidget/TrashWidget.entitlements;
 				DEVELOPMENT_TEAM = MTCCJ9QPF6;
 				INFOPLIST_FILE = TrashWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -569,6 +584,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TrashWidget/TrashWidget.entitlements;
 				DEVELOPMENT_TEAM = MTCCJ9QPF6;
 				INFOPLIST_FILE = TrashWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -639,6 +655,7 @@
 		F61A769D1E201021006A82D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				DEVELOPMENT_TEAM = MTCCJ9QPF6;
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -652,6 +669,7 @@
 		F61A769E1E201021006A82D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				DEVELOPMENT_TEAM = MTCCJ9QPF6;
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -681,6 +699,7 @@
 				F61A76831E200CEE006A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F61A76841E200CEE006A82D0 /* Build configuration list for PBXNativeTarget "TrashWidgetTests" */ = {
 			isa = XCConfigurationList;
@@ -689,6 +708,7 @@
 				F61A76861E200CEE006A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F61A76871E200CEE006A82D0 /* Build configuration list for PBXNativeTarget "TrashWidgetUITests" */ = {
 			isa = XCConfigurationList;
@@ -697,6 +717,7 @@
 				F61A76891E200CEE006A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F61A769C1E201021006A82D0 /* Build configuration list for PBXNativeTarget "Widget" */ = {
 			isa = XCConfigurationList;
@@ -705,6 +726,7 @@
 				F61A769E1E201021006A82D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,7 +13,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var trashTypeLabel: UILabel!
     @IBOutlet weak var weekDayLabel: UILabel!
-    
+    @IBOutlet weak var timeLable: UILabel!
+    let defaults = UserDefaults(suiteName: TrashDefinition.defaultSuite)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +32,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-        
+        print("call widgetPerformUpdate")
         completionHandler(NCUpdateResult.newData)
     }
     
     func settingLabel() {
         trashTypeLabel.text = DateUtils.getTodayTrashType()
         weekDayLabel.text = DateUtils.getTodayWeekDayJa()
+        timeLable.text = defaults.string(forKey: TrashDefinition.timerLimitKey)! + "時"
     }
 }

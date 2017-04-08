@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,28 +21,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="123" y="34" width="75" height="66"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vy-qX-Kj6">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="51E-VB-B4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vy-qX-Kj6">
-                                <rect key="frame" x="10" y="40" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="ゴミの日" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="109.5" y="8" width="101.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0時" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P62-uX-JaO">
+                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="iYN-UT-Nkl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" symbolic="YES" id="0Q0-KW-PJ6"/>
-                            <constraint firstItem="0Vy-qX-Kj6" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="8" id="FuZ-yj-M9o"/>
-                            <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="122" id="L8K-9R-egU"/>
-                            <constraint firstAttribute="bottom" secondItem="0Vy-qX-Kj6" secondAttribute="bottom" constant="8" id="iyA-KO-9v5"/>
-                            <constraint firstItem="0Vy-qX-Kj6" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="l8k-Jz-sAF"/>
+                            <constraint firstItem="P62-uX-JaO" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" constant="25" id="1Qw-IT-Yx2"/>
+                            <constraint firstItem="0Vy-qX-Kj6" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="FuZ-yj-M9o"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="bu4-Go-8Lc"/>
+                            <constraint firstAttribute="bottom" secondItem="0Vy-qX-Kj6" secondAttribute="bottom" constant="50" id="iyA-KO-9v5"/>
+                            <constraint firstItem="P62-uX-JaO" firstAttribute="top" secondItem="0Vy-qX-Kj6" secondAttribute="bottom" id="j53-N7-HjZ"/>
+                            <constraint firstItem="0Vy-qX-Kj6" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" constant="-25" id="l8k-Jz-sAF"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" symbolic="YES" id="mYS-Cv-VNx"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="0Vy-qX-Kj6" secondAttribute="trailing" constant="71" id="xuy-o1-BYe"/>
-                            <constraint firstItem="0Vy-qX-Kj6" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="yo1-oc-gJU"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="mlO-VQ-9xD"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="P62-uX-JaO" secondAttribute="bottom" id="nAF-SK-lQP"/>
+                            <constraint firstItem="P62-uX-JaO" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="pDg-O9-yzU"/>
+                            <constraint firstItem="0Vy-qX-Kj6" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="yo1-oc-gJU"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -52,6 +68,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="100"/>
                     <connections>
+                        <outlet property="timeLable" destination="P62-uX-JaO" id="CNO-PX-O7C"/>
                         <outlet property="trashTypeLabel" destination="GcN-lo-r42" id="4Ya-aL-PLG"/>
                         <outlet property="weekDayLabel" destination="0Vy-qX-Kj6" id="5oJ-mV-60g"/>
                     </connections>

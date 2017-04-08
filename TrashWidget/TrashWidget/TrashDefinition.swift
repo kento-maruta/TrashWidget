@@ -18,4 +18,7 @@ class TrashDefinition {
     static let saturday = "燃やすゴミ"
     static let sunday = "今日はゴミ捨てられないよ"
     
+    static let defaultSuite = "group.TrashWidget"
+    static let timerLimitKey = "timerLimitKey"
+    
 }
