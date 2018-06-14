@@ -1,1 +1,3 @@
 # TrashWidget
+
+iOSのウィジットを試したかった
